@@ -45,6 +45,7 @@ data_files = [
         ]
 
 def post_install(i):
+    FileNotFoundError = IOError
     try:
         for f in data_files:
             for o in f[1]:
